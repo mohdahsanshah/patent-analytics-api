@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "6c8edaf9-33c9-4f86-bef9-01eea8e0c3b9",
+		"name": "Patent Analytics API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30331308",
+		"_collection_link": "https://lunar-space-719303.postman.co/workspace/Personal-workspace~d5b6605f-078b-4738-8781-17d95cc8c8db/collection/30331308-6c8edaf9-33c9-4f86-bef9-01eea8e0c3b9?action=share&source=collection_link&creator=30331308"
+	},
+	"item": [
+		{
+			"name": "With Docker",
+			"item": [
+				{
+					"name": "summary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/summary",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"summary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query by year",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/query?year=2023",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"query"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "2023"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query by year - Negative Test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/query?year=dsfs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"query"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "dsfs"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Correlation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/correlation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"correlation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Without Docker-Local Server",
+			"item": [
+				{
+					"name": "summary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8765/summary",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"summary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query by year",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8765/query?year=2023",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"query"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "2023"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query by year - Negative Test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8765/query?year=dsfs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"query"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "dsfs"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Correlation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8765/correlation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"correlation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

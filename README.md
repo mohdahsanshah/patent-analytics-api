@@ -246,6 +246,16 @@ http://localhost:8765
 - Ensure PostgreSQL is running before starting the server
 - Update credentials in `app_local.php` according to your local setup
 
+## 📬 Postman Collection
+
+A Postman collection is included inside the `/postman` directory.
+
+Import the collection into Postman and test the endpoints locally:
+
+Base URL:
+http://localhost:8080
+
+Local server URL: localhost:8765
 
 ##  Author
 
