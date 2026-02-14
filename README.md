@@ -46,8 +46,8 @@ The entire application runs inside Docker containers for easy setup and portabil
 ### 1 Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <project-folder>
+git clone git@github.com:mohdahsanshah/patent-analytics-api.git
+cd patent-analytics-api
 ```
 
 ### 2 Build and start containers
