@@ -178,6 +178,75 @@ Uses PostgreSQL `CORR()` function.
 
 ---
 
+--------------------------------------------
+--------------------------------------------
+---
+
+##  Running Without Docker (Local Setup)
+
+If you prefer to run the application without Docker, follow these steps:
+
+### Requirements
+
+- PHP 8.2+
+- Composer
+- PostgreSQL 18
+- CakePHP CLI
+
+---
+
+### 1 Clone the repository
+
+```bash
+git clone git@github.com:mohdahsanshah/patent-analytics-api.git
+cd patent-analytics-api
+```
+
+---
+
+### 2 Configure Database
+
+Open:
+
+```
+config/app_local.php
+```
+
+Update database settings:
+
+```php
+'host' => 'localhost',
+'port' => '5432',
+'username' => 'postgres',
+'password' => 'your_password',
+'database' => 'patents_db',
+```
+
+Make sure PostgreSQL service is running locally.
+
+---
+
+### 3 Start Development Server
+
+```bash
+bin/cake server
+```
+
+Application will run at:
+
+```
+http://localhost:8765
+```
+
+---
+
+##  Notes
+
+- Default CakePHP dev server runs on port **8765**
+- Ensure PostgreSQL is running before starting the server
+- Update credentials in `app_local.php` according to your local setup
+
+
 ##  Author
 
 Mohd Ahsan  
