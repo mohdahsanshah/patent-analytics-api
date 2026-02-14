@@ -257,6 +257,33 @@ http://localhost:8080
 
 Local server URL: localhost:8765
 
+---
+
+## API Response Screenshots
+
+### Summary Endpoint
+
+![Summary Response](docs/screenshots/summary-response.png)
+
+---
+
+### Query By Year
+
+![Query Response](docs/screenshots/query-response.png)
+
+---
+
+### Correlation Analysis
+
+![Correlation Response](docs/screenshots/correlation-response.png)
+
+---
+
+### Validation Error Example
+
+![Validation Error](docs/screenshots/validation-error.png)
+
+
 ##  Author
 
 Mohd Ahsan  
